@@ -12,13 +12,16 @@ nav { /* Override a property from the nav in style.css */
     background-color: rgb(95, 15, 15);
 }
 
-.dropdown {
-    position: relative;
-}
-
 .dropdown p {
     color: white;
     margin: 0;
+    line-height: 27px;
+    margin-top: 10.5px; /* get it inline with the other a tags in the nav */
+}
+
+.dropdown:hover p {
+    color: black;
+    background-color: white;
 }
 
 .dropdown-content {
@@ -41,3 +44,4 @@ nav { /* Override a property from the nav in style.css */
 
 /* Show dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
+
