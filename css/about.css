@@ -1,0 +1,43 @@
+/* 
+    Keep in mind! 
+    
+    This css stylesheet may look like it's missing some stuff like most of the nav styling.
+    In the about.html this sheet is linked AFTER the style.css so the page rendering 
+    has already gone through all that. This is a great place to override some stuff or
+    do some about.html specific styling.
+*/
+
+
+nav { /* Override a property from the nav in style.css */
+    background-color: rgb(95, 15, 15);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown p {
+    color: white;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(97, 32, 32);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Override a tags */
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: rgb(95, 50, 50);}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}

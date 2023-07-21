@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.hero {
+    text-align: center;
+    line-height: 4rem;
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+nav {
+    background-color: black;
+}
+
+.snippets,
+nav ul {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+nav ul {
+    width: 33%;
+    margin-top: 0;
+    line-height: 3rem;
+    justify-content: space-around; /* Note! The "display: flex" property is declared above so this works here.*/
+}
+
+a {
+    text-decoration: none;
+    padding: 5px; /*Increase the size of the clickable area.*/
+    color: white;
+}
+
+a:hover {
+    color: black;
+    background-color: white;
+}
+
+.snippets {
+    display: grid; /* Note! The "display: flex" property is declared in the .snippets above but this overrides it!*/
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: black;
+    /* 
+    The propety below looks complex...let's break it down.
+    repeat: takes two arguments
+        - The first is repeat count which can be either a number, auto-fill, or auto-fit
+        - The second is the amount of tracks or, in this case, columns,
+            - For my column amount, I chose the use the css minmax function
+                - the first argument is the MINIMUN column width
+                - the second argument is the MAXIMUM column width.
+                - So here I have MIN column width of 200px and MAX of 1fr
+                    - 1fr = 1 fractional unit. Basically, it's used to fill the space here.
+    */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.snippet {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    height: 225px;
+    text-align: center;
+}
+
+.snippet img {
+    width: 100px;
+    margin: 0 auto; /*Auto will center a non-text element if the parent is display:flex*/
+}
+
+.snippet a {
+    margin: 1rem auto 0 auto; /*Auto will center a non-text element if the parent is display:flex*/
+    background-color: black;
+    width: 100px;
+}
