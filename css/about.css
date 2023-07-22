@@ -44,4 +44,3 @@ nav { /* Override a property from the nav in style.css */
 
 /* Show dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
-

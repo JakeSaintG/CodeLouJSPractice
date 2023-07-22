@@ -1,0 +1,20 @@
+.dynamic-text-snippet {
+    width: 40%;
+    margin: 5rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h2 {
+    font-family:'Times New Roman', Times, serif;
+    height: 30px;
+    border: solid black 2px;
+    border-radius: 1rem;
+}
+
+#dyn-text-input {
+    width: 20rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
