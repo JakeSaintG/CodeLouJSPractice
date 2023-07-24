@@ -1,0 +1,57 @@
+.alert-snippet {
+    display: grid;
+    width: 200px;
+    margin: 0 auto;
+}
+
+/*  
+    Bell courtesy of https://cssicon.space/#/icon/bell-solid (Great icon resource; Highly recommend!)
+    Minor tweaks made.
+*/
+
+.bell {
+    position: relative;
+    margin: 1rem auto 3rem auto;
+    width: 90px;
+    height: 100px;
+    border: solid 10px rgb(120, 120, 236);
+    background-color: rgb(120, 120, 236);
+    border-radius: 50px 50px 0 0;
+}
+
+.bell::before {
+    content: '';
+    position: absolute;
+    bottom: -45px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 10px rgb(120, 120, 236);
+    background-color: rgb(120, 120, 236);
+}
+
+.bell::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: -30px;
+    width: 130px;
+    height: 0px;
+    border-top: solid 10px rgb(120, 120, 236);
+}
+
+#button_badge {
+    display: none;
+    color: white;
+    background-color: #fa3e3e;
+    font-size: xx-large;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    position: absolute; 
+    left: calc(50% - 65px);
+    top: 150px;
+}

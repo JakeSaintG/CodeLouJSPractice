@@ -6,7 +6,7 @@
     text-align: center;
 }
 
-h2 {
+.dynamic-text-snippet h2 {
     font-family:'Times New Roman', Times, serif;
     height: 30px;
     border: solid black 2px;

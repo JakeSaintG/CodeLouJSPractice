@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading..</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="./loading.css">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <h1>What Can JavaScript Do For You?</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="loading-snippet">
+        <p>Please wait...</p>
+        <p>Installing</p>
+        <span class="loading-bar">
+            <div id="amount-loaded">
+
+            </div>
+        </span>
+        <p>0 MB of 100 MB</p>
+    </section>
+    <input type="range" name="loading-slider" min="0" max="100" value="0" step="5" oninput="load(this.value)">
+    <script src="./loading.js"></script>
+</body>
+</html>

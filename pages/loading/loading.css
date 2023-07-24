@@ -1,0 +1,31 @@
+.loading-snippet {
+    border: solid 1px #A0BDDF;
+    display: grid;
+    width: 75%;
+    margin: 1rem auto;
+}
+
+.loading-snippet p {
+    padding-left: 5%;
+}
+
+.loading-snippet p:first-child {
+    background-color: #A0BDDF;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.loading-bar {
+    border: solid 1px #A0BDDF;
+    height: 37px;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+#amount-loaded {
+    display: none;
+    background-color: #24C953;
+    height: 35px;
+    width: 0;
+}
