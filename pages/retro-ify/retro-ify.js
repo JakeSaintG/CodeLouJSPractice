@@ -1,5 +1,11 @@
-console.log(document.title);
+const img = document.getElementById('retro-ify');
 
-/*
-    TODO: turn an image black/white and back with the click of a button
-*/
+applyFilter = () => {
+    if (img.className == "") {
+        img.className = "grayscale";
+    } else if (img.className == "grayscale") {
+        img.className = "sepia";
+    } else {
+        img.className = "";
+    }
+}
