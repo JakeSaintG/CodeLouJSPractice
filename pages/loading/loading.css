@@ -29,3 +29,7 @@
     height: 35px;
     width: 0;
 }
+
+input {
+    margin: 0 12.5%;
+}

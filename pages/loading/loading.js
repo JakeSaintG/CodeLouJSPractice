@@ -1,4 +1,5 @@
 const amountLoaded = document.getElementById('amount-loaded');
+const progress = document.getElementById('progress');
 
 load = (amount) => {
 
@@ -9,4 +10,6 @@ load = (amount) => {
     }
 
     amountLoaded.style.width = `${amount}%`;
+
+    progress.innerHTML = `${amount} MB of 100 MB`;
 }

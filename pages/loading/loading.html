@@ -27,11 +27,9 @@
         <p>Please wait...</p>
         <p>Installing</p>
         <span class="loading-bar">
-            <div id="amount-loaded">
-
-            </div>
+            <div id="amount-loaded"></div>
         </span>
-        <p>0 MB of 100 MB</p>
+        <p id="progress">0 MB of 100 MB</p>
     </section>
     <input type="range" name="loading-slider" min="0" max="100" value="0" step="5" oninput="load(this.value)">
     <script src="./loading.js"></script>
